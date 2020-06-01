@@ -1,0 +1,54 @@
+/*css stle of the source, grid and robots */
+/*margin */
+.container {
+  margin-top: 60px;
+}
+/*grid-layout which of 3000 px of window size  */
+
+.grid-layout {
+  width: 3000px;
+  height: auto;
+  margin: 10px auto;
+  padding: 5px;
+  position: relative;
+}
+/* grid row style */
+.grid-row {
+  clear: both;
+  width: 3000px;
+  height: 10px;
+}
+/*grid item which is having width and height 30*30px for window size of 3000px*/
+.grid-item {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+/*moving robots in the starting point (1-100) postion*/
+.grid-moving-item {
+  background: blue;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  margin: 2px 2px;
+  transition: all 0.4s linear;
+}
+
+.grid-item h6,
+.grid-moving-item h6 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+/* stationary grid in the source point (1-100)*/
+.grid-robot .grid-item {
+  background: #880808;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  margin: 2px 2px;
+}
+/* to make even and odd grid */
+.grid-box .grid-row:nth-child(even) .grid-item:nth-child(odd) {
+  background: #ddd;
+}
